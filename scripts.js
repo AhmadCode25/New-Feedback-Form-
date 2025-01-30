@@ -30,9 +30,8 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
             alert('Form submitted successfully!');
             this.reset();
 
-            // If both satisfaction and care are "Satisfied" or "Very Satisfied", open Google review page
-            if ((satisfaction === 'Satisfied' || satisfaction === 'Very Satisfied') &&
-                (care === 'Satisfied' || care === 'Very Satisfied')) {
+            // If both satisfaction and care are "Satisfied" or satisfaction === 'Very Satisfied') &&
+                (care === 'Satisfied' or care === 'Very Satisfied')) {
                 window.open('https://shorturl.at/wUYz3', '_blank');
                 alert('Kindly, if you can add a Google review.');
             }
